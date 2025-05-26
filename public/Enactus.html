@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enactus - MIU Clubs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="title-miu">
+            <img src="logo-miu.png" alt="MIU Logo" class="header-logo">
+        </div>
+        <nav class="navigations">
+            <a href="index.html">Home</a>
+            <a href="#clubs">Our Clubs</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    
+    </header>
+    
+    <section class="club-container">
+        <div class="club-content">
+            <h1 class="club-title">Enactus</h1>
+            <p class="club-description">
+                Enactus is a global organization that empowers students to engage in social entrepreneurship. Through 
+                various projects, MIU Enactus competes nationally among 56 universities and aims to represent Egypt in 
+                the Enactus World Cup, competing with 37 other countries.
+            </p>
+        </div>
+        
+        <div class="club-gallery">
+            <img src="miu clubs/Enactus-01.jpg" alt="Enactus Event" class="club-img">
+            <img src="miu clubs/Enactus-03.jpg" alt="Enactus Presentation" class="club-img">
+        </div>
+    </section>
+
+    <section id="apply" class="apply-form" >
+        <h2>Apply to Enactus</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" name="student-id" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="faculty">Faculty:</label>
+            <select id="faculty" name="faculty" required>
+                <option value="cs">Computer Science</option>
+                <option value="masscom">Mass Communication</option>
+                <option value="dentistry">Dentistry</option>
+                <option value="business">Business</option>
+                <option value="alsun">Alsun</option>
+            </select>
+            
+            <button type="submit">Apply</button>
+        </form>
+    </section>
+
+    <section id="enactus-details" class="club-details">
+        <h2>Enactus links</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/enactus/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/c/EnactusOrg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/enactus" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <p>Contact Us: <a href="mailto:miuclubs@university.com">miuclubs@university.com</a> | Phone: +123456789</p>
+        </div>
+    </footer>
+</body>
+</html>
