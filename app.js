@@ -12,6 +12,7 @@ app.use(express.json());
 
 app.use(express.static('public'));
 
+app.use(express.static('public'));
 // Use the routes
 app.use('/api', indexRoutes);
 app.get('/', (req, res) => {
