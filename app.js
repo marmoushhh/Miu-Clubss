@@ -12,7 +12,9 @@ app.use(express.json());
 
 // Use the routes
 app.use('/api', indexRoutes);
-
+app.get('/', (req, res) => {
+  res.send('MIU Clubs Backend is working!');
+});
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
