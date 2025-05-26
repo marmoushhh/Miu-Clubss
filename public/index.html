@@ -1,173 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIU Clubs</title>
+    <meta charset="utf-8">
+    <title>MIU Clubs & Organizations</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/fulllogo_transparent_nobuffer.png" rel="icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
 
-  
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-     <h1>Message from backend:</h1>
-    <p id="message">Loading...</p>
-        
-    <header>
-        <div class="title-miu">
-            <img src="logo-miu.png" alt="MIU Logo" class="header-logo">
-        </div>
-       
-        <nav class="navigations">
-            <a href="#home-button">home</a>
-            <a href="#clubs">Our Clubs</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="search-box">
-            <input type="text" class="search" placeholder="Search..." />
-            <div class="result-box"></div>
-        </div>
 
-    </header>
     
-    <section class="main" id="home-button">
-        <div>
-            <h2>Welcome to<br><span>MIU Clubs</span></h2>
-            <h3>Explore and join  our student organizations</h3>
-            <a href="#clubs" class="main-btn" >Discover Clubs</a>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-    </section>
-    
-   <section class="cards" id="clubs">
-    <h2 class="title">Our Clubs</h2>
-    <div class="content">
-        <a href="#academic-club" class="card">
-            <div class="icon"><i class="fa-solid fa-book"></i></div>
-            <div class="info">
-                <h3>Academic Club</h3>
-                <p>Engage in intellectual discussions, competitions, and research projects.</p>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <i class="fa-solid fa-location-dot" style="margin-right: 7px; color: #b51b1b;"></i>
+                    <a href="https://maps.app.goo.gl/tYb3LZEXhwsgYxYi8" style="color: #555;" target="_blank">
+                        <small>Misr International University (MIU)</small>
+                    </a>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <i class="fa-regular fa-envelope" style="margin-right: 7px; color: #b51b1b;"></i><a href="mailto:karim2304639@miuegypt.edu.eg" style="color: #555;"><small>info@miuegypt.edu.eg</small></a>
+                </div>
             </div>
-        </a>
-        <a href="#Arts-club" class="card">
-            <div class="icon"><i class="fas fa-theater-masks"></i></div>
-            <div class="info">
-                <h3>Arts & Entertainment Club</h3>
-                <p>Express your creativity through music, theater, and visual arts.</p>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+20 1023302550<br>
+                        +20 1020111919</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.facebook.com/profile.php?id=100068778008139&mibextid=wwXIfr&mibextid=wwXIfr " target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.linkedin.com/school/misr-international-university/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href="https://www.instagram.com/misrinternationaluniversity?igsh=bDJldTJyOWJwbXd3 " target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" style="padding-bottom: 20px !important;">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="img/logo-miu.png" alt="Technical Support" style="height: 72px; margin-top: 20px;">
         </a>
-        <a href="#Charity-club" class="card">
-            <div class="icon"><i class="fa-solid fa-hands-holding-child"></i></div>
-            <div class="info">
-                <h3>Charity Club</h3>
-                <p>Participate in community service and fundraising for social causes.</p>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0 text-nav" style="margin-top: 20px; margin-right: 80px;">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">Communities</a>
+                <a href="Our Clubs.html" class="nav-item nav-link">Our Clubs</a>
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
             </div>
-        </a>
-    </div>
-</section>
-
-<!-- Club Details Section -->
-<section class="club-details" id="academic-club">
-    <div class="all-clubs-container">
-        <h2 class="title">Academic Clubs</h2>
-        <div class="club-grid">
-            <figure class="club-item">
-                <a href="Enactus.html">
-                    <img src="miu clubs/Enactus-01.jpg" alt="Enactus">
-                </a>
-                <figcaption><a href="Enactus.html" id="Enactus-title">Enactus</a></figcaption>
-            </figure>
-            <figure class="club-item">
-                <a href="MUN.html">
-                    <img src="miu clubs/MUN-03.jpg" alt="MUN">
-                </a>
-                <figcaption><a href="MUN.html">MUN</a></figcaption>
-            </figure>
-            <figure class="club-item">
-                <a href="TEDx.html">
-                    <img src="miu clubs/TEDxCairoUni.jpg" alt="TEDx">
-                </a>
-                <figcaption><a href="TEDx.html">TEDx</a></figcaption>
-            </figure>
-            <figure class="club-item">
-                <a href="ACPC.html">
-                    <img src="miu clubs/images (1).jpg" alt="ACPC" id="acpc-img">
-                </a>
-                <figcaption><a href="ACPC.html">ACPC</a></figcaption>
-            </figure>
         </div>
-        <br> <br> <br>
-        <p>Academic Clubs provide students with opportunities to enhance their knowledge, develop new skills, and engage in intellectual discussions. These clubs focus on research, competitions, and hands-on learning experiences that prepare students for academic and professional success.</p>
-    </div>
-</section>
+    </nav>
+    <!-- Navbar End -->
 
 
-<section class="club-details" id="Arts-club">
-    <div class="all-clubs-container">
-        <h2 class="title">Arts & Entertainment Clubs</h2>
-        <div class="club-grid">
-           
-            <figure class="club-item">
-                <a href="Gamers Legact.html">
-                <img src="miu clubs/Gamers-04.jpg" alt="Gamers Legacy">
-                </a>
-                <figcaption a href="Gamers Legact.html">Gamers Legacy</figcaption>
-            </figure>
-            <figure class="club-item">
-                <a href="Tunners.html">
-                <img src="miu clubs/Tuners-03 (1).jpg" alt="Tunners">
-                 </a>
-                <figcaption a href="Tunners.html">Tunners</figcaption>
-            </figure>
-            <figure class="club-item">
-                <a href="El warsha.html">
-                <img src="miu clubs/warsha-03.jpg" >
-            </a>
-                <figcaption  a href="El warsha.html">El warsha</figcaption>
-            </figure>
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative" style="max-height: 850px;">
+                <video class="video_background" autoplay loop muted playsinline>
+                    <source src="IMG/bg_Video2.mp4" type="video/mp4">
+                </video>
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" >
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">MIU Clubs</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Explore and join our student organizations.</p>
+                                <a href="Our Clubs.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Clubs</a>
+                                <a href="contact.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight quote-btn">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To SHARAF IT LLC</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Best Carpenter & Craftsman Services</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-3.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To WooDY</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Best Carpenter & Craftsman Services</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
         </div>
-        <br> <br> 
-        <p>Arts and Entertainment Clubs celebrate creativity and self-expression through various artistic and cultural activities. From music and theater to filmmaking and visual arts, these clubs provide a vibrant space for students to showcase their talents and explore their artistic passions.
-
-            </p>
     </div>
-</section>
+    <!-- Carousel End -->
 
-<section class="club-details" id="Charity-club">
-    <div class="all-clubs-container">
-        <h2 class="title">Charity Clubs</h2>
-        <div class="club-grid">
-            
-            <figure class="club-item">
-                <a href="MOVE.html">
-                <img src="miu clubs/Move-04.jpg" alt="Move">
-              </a>
-                <figcaption a href="MOVE.html">MOVE</figcaption>
-            </figure>
-            <figure class="club-item">
-                <a href="IHEPC.html">
-                <img src="miu clubs/IHEPC-03.jpg" alt="IHEPC">
-                </a>
-                <figcaption a href="IHEPC.html">IHEPC</figcaption>
-            </figure>
-            <figure class="club-item">
-                <a href="ASCC.html">
-                <img src="miu clubs/ASCC-01.jpg"alt="ASCC" >
-                </a>
-                <figcaption a href="ASCC.html" >ASCC</figcaption>
-            </figure>
+
+ 
+
+    <!-- About Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container about px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid choose-us" style="margin-left: 100px; margin-top: 105px; max-width: 800px;" src="img/pexels-fauxels-3184357.jpg"  alt="Managed Security Services">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <div class="section-title text-start">
+                            <p style="font-size: 25px; color: #d41111;">WHY CHOOSE A CLUB</p>
+                            <!-- <h6 class="mb-4" style="font-size: 25px; color: #0f41cacf;">WHY CHOOSE US</h6> -->
+                            <h6 class="display-6 mb-4">Boost Your Campus Experience With Involvement</h6>
+                        </div>
+                        <p>Joining a club can help you grow personally, academically, and professionally while connecting with like-minded peers and making the most of your university life.</p>
+                        <ul style="font-size: 30px; color: #b51b1b;">
+                            <li><p style="color: black; font-size: 20px;">You become part of a passionate community that shares your interests, values, or career goals.</p></li>
+                            <li><p style="color: black; font-size: 20px;">You gain leadership experience and hands-on skills that go beyond the classroom.</p></li>
+                            <li><p style="color: black; font-size: 20px;">You can expand your network by connecting with students, faculty, alumni, and professionals.</p></li>
+                            <li><p style="color: black; font-size: 20px;">You get opportunities to participate in exciting events, workshops, competitions, and volunteer activities.</p></li>
+                        </ul>
+                        <div class="row g-4 mb-4 pb-2">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-users fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h2 class="text-primary mb-1" data-toggle="counter-up">10</h2>
+                                        <p class="fw-medium mb-0">Active Clubs</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-check fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h2 class="text-primary mb-1" data-toggle="counter-up">1234</h2>
+                                        <p class="fw-medium mb-0">Projects Done</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <a href="Our Clubs.html" class="btn btn-primary py-3 px-5">Explore More</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <br> <br> 
-        <p>Charity Clubs provide students with opportunities to make a meaningful impact through humanitarian efforts. These clubs focus on community service, fundraising, and volunteer work, fostering a culture of empathy and social responsibility among students.</p>
     </div>
-</section>
-    
-    <section class="contact" id="contact">
-        <h2 class="title">Contact Us</h2>
-        <p>Email: miuclubs@university.com | Phone: +123456789</p>
-    </section>
-   <script src="script.js"></script>
+    <!-- About End -->
+
+
+    <!-- Club Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center">
+                <p style="font-size: 20px; color: #e72222; font-family: 'Roboto';">Our Clubs</p>
+                <h2 style="color: #b51b1b;">MIU — Beyond Academics</h2>
+                <h2 style="margin-bottom: 30px;">Sneak a Scroll Through<br>the Club.</h2>
+                <!-- <h1 class="display-5 mb-5">Our Clubs</h1> -->
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden" style="text-align: center;">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light">
+                            <img class="img-fluid" src="img/download.png" alt="ACPC Photo" style="height: 80px; margin-bottom: 15px;">
+                            <h4 class="mb-3">ACPC</h4>
+                            
+                            <a class="fw-medium" href="ACPC.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden" style="text-align: center;">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light">
+                            <img class="img-fluid" src="img/Enactus-01.jpg" alt="Enactus Photo" style="height: 80px; margin-bottom: 15px;">
+                            <h4 class="mb-3">Enactus</h4>
+                            
+                            <a class="fw-medium" href="Enactus.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden" style="text-align: center;">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light">
+                            <img class="img-fluid" src="img/TEDxCairoUni.jpg" alt="TEDx Photo" style="height: 80px; margin-bottom: 15px;">
+                            <h4 class="mb-3">TEDx</h4>
+                            
+                            <a class="fw-medium" href="TEDx.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden" style="text-align: center;">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light">
+                            <img class="img-fluid" src="img/MUN-01.jpg" alt="MUN Photo" style="height: 80px; margin-bottom: 15px;">
+                            <h4 class="mb-3">MUN</h4>
+
+                            <a class="fw-medium" href="MUN.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden" style="text-align: center;">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light">
+                            <img class="img-fluid" src="img/Gamers-01.jpg" alt="Gamers Legacy Photo" style="height: 80px; margin-bottom: 15px;">
+                            <h4 class="mb-3" style="font-size: 21px;">Gamers Legacy</h4>
+                            
+                            <a class="fw-medium" href="GamersLegacy.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden" style="text-align: center;">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light">
+                            <img class="img-fluid" src="img/Tuners-03.jpg" alt="Tunners Photo" style="height: 80px; margin-bottom: 15px;">
+                            <h4 class="mb-3">Tunners</h4>
+                            
+                            <a class="fw-medium" href="Tunners.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden" style="text-align: center;">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light">
+                            <img class="img-fluid" src="img/warsha-03.jpg" alt="El Warsha Photo" style="height: 80px; margin-bottom: 15px;">
+                            <h4 class="mb-3" style="font-size: 21px;">El Warsha</h4>
+                            
+                            <a class="fw-medium" href="El Warsha.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden" style="text-align: center;">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light">
+                            <img class="img-fluid" src="img/Move-03.jpg" alt="MOVE Photo" style="height: 80px; margin-bottom: 15px;">
+                            <h4 class="mb-3" style="font-size: 21px;">MOVE</h4>
+                            
+                            <a class="fw-medium" href="MOVE.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden" style="text-align: center;">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light">
+                            <img class="img-fluid" src="img/IHEPC-03.jpg" alt="IHEPC Photo" style="height: 80px; margin-bottom: 15px;">
+                            <h4 class="mb-3" style="font-size: 21px;">IHEPC</h4>
+                            
+                            <a class="fw-medium" href="IHEPC.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden" style="text-align: center;">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light">
+                            <img class="img-fluid" src="img/ASCC-01.jpg" alt="ASCC Photo" style="height: 80px; margin-bottom: 15px;">
+                            <h4 class="mb-3" style="font-size: 21px;">ASCC</h4>
+                            
+                            <a class="fw-medium" href="ASCC.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Club End -->
+
+
+    <!-- Quote Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container quote px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/contact-us.jpg" alt="Remote Desktop Support">
+                    </div>
+                </div>
+                <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <div class="section-title text-start">
+                            <h1 class="display-5 mb-4">Register for a Club</h1>
+                        </div>
+                        <p class="mb-4 pb-2">Take the first step toward new friendships, unforgettable experiences, and personal growth. Clubs are where passions come to life. Find your people, explore your interests, and make your mark on campus!.</p>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" required placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" required placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" required placeholder="Your Mobile" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0" style="height: 55px;">
+                                        <option selected>Select A Club</option>
+                                        <option value="1">ACPC</option>
+                                        <option value="2">Enactus</option>
+                                        <option value="3">TEDx</option>
+                                        <option value="4">MUN</option>
+                                        <option value="5">Gamers Legacy</option>
+                                        <option value="6">Tunners</option>
+                                        <option value="7">El Warsha</option>
+                                        <option value="8">MOVE</option>
+                                        <option value="9">IHEPC</option>
+                                        <option value="10">ASCC</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" required placeholder="Note"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit"><a href="mailto:info@sharafit.com" class="text-decoration-none" style="color: #fff;" type="submit">Submit</a></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+
+
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="section-title text-center">
+                <h1 class="display-5 mb-5">Testimonial</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text text-center p-4">
+                        <p>ACPC is the best club ever.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text text-center p-4">
+                        <p>Organized events, good communication.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text text-center p-4">
+                        <p>Excellent condition, beyond expectations </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6">
+                    <h4 class="text-light mb-4">Contact Info</h4>
+                    <a href="https://maps.app.goo.gl/tYb3LZEXhwsgYxYi8" target="_blank" style="color: white; width: fit-content !important;"><p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Misr International University (MIU)</p></a>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+20 1023302550
+                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+20 1020111919</p>
+                        <i class="fa fa-envelope me-3"></i><a href="mailto:karim2304639@miuegypt.edu.eg" style="color: white;">info@miuegypt.edu.eg/a>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=100068778008139&mibextid=wwXIfr&mibextid=wwXIfr " target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/school/misr-international-university/ " target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/misrinternationaluniversity?igsh=bDJldTJyOWJwbXd3 " target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 service-footer">
+                    <h4 class="text-light mb-4">Clubs</h4>
+                    <a class="btn btn-link" href="ACPC.html">ACPC</a>
+                    <a class="btn btn-link" href="Enactus.html">Enactus</a>
+                    <a class="btn btn-link" href="TEDx.html">TEDx</a>
+                    <a class="btn btn-link" href="MUN.html">MUN</a>
+                    <a class="btn btn-link" href="GamersLegacy.html">Gamers Legacy</a>
+                    <a class="btn btn-link" href="Tunners.html">Tunners</a>
+                    <a class="btn btn-link" href="El Warsha.html">El Warsha</a>
+                    <a class="btn btn-link" href="MOVE.html">MOVE</a>
+                    <a class="btn btn-link" href="IHEPC.html">IHEPC</a>
+                    <a class="btn btn-link" href="ASCC.html">ASCC</a>
+                </div>
+                <div class="col-lg-4 col-md-6 service-footer">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="index.html">Home</a>
+                    <a class="btn btn-link" href="about.html">Communities</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="Our Clubs.html">Our Services</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 service-footer">
+                        &copy; <a class="border-bottom" href="https://www.sharafit.com/" target="_blank"> MIU Organization</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end service-footer">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="https://www.sharafit.com/" target="_blank"> Karim Amr, Omar Aly, Seif Amr, Ziad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
