@@ -1,0 +1,513 @@
+/* General Styles */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+a {
+    color: #000000; /* Default link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    color: #005fa3; /* Change color when hovered */
+}
+
+a:visited {
+    color: #000000; /* Keep visited links the same color */
+    text-decoration: none; /* Ensure no underline */
+}
+
+/* Header */
+header {
+    background-color: #1a1f36;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+section{
+scroll-margin-top:80px;
+padding-top: 100px;
+}
+
+
+.title-miu {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #00aaff; /* Blue color */
+}
+
+.header-logo {
+    width: 12em; /* Adjust size as needed */
+    height: auto;
+   
+}
+
+.navigations {
+    display: flex;
+    gap: 20px; /* Space between links */
+    margin-left: auto; /* Pushes nav to the right */
+    align-items: center;
+}
+.navigations a {
+    text-decoration: none;
+    color: #00aaff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left: 8px;
+    transition: color 0.3s;
+}
+
+.navigations a:hover {
+    color: #0077cc;
+}
+
+.search {
+    font-size: 1em;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-left: 15px; /* Adds space between nav and search */
+}
+
+/* main Section */
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('background.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.main h2 {
+    color: #333;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    color: #00aaff;
+    font-size: 3em;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.main h3 {
+    color: #444;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: white;
+    background-color: #0077cc;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+}
+
+/* Cards Section */
+.cards {
+    padding: 100px 200px;
+    text-align: center;
+}
+
+.title {
+    color: #0077cc;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 320px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    color: #00aaff;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.info h3 {
+    color: #0077cc;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    text-align: center;
+    background-color: #1a1f36;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 1.2em;
+}
+.cards .card {
+    text-decoration: none; /* Removes link underline */
+    background-color: white;
+    width: 320px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.3s;
+    display: block; /* Makes the whole card clickable */
+    cursor: pointer;
+}
+
+.cards .card:hover {
+    transform: scale(1.05);
+}
+
+.club-details {
+    padding: 10px 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-top: 50px;
+    border-radius: 10px;
+    
+}
+
+.club-details img {
+    max-width: 80%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+#academic-club{
+    padding-left:200px;
+    padding-right:200px;
+    display: flex;
+    background-color:#f0f0f0;
+    height:500px;
+}
+#Arts-club{
+    padding-left:200px;
+    padding-right:200px;
+    display: flex;
+    background-color:#f0f0f0;
+    height:500px;
+}
+#Charity-club{
+    padding-left:200px;
+    padding-right:200px;
+    display: flex;
+    background-color:#f0f0f0;
+    height:500px;
+}
+.club-images {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adjusts space between images */
+    margin-top: 20px; /* Space between the header and images */
+}
+
+.club-images img {
+    max-width: 45%; /* Ensures images are responsive and fit within the container */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.all-clubs-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.club-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+#acpc-img{
+    height:149px;
+}
+.club-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    
+}
+
+.club-item img {
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.club-item figcaption {
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effects */
+.club-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+.club-item:hover figcaption {
+    color: #0077cc; /* Change text color on hover */
+    text-decoration: none;
+}
+.club-item:hover figcaption a {
+    color: #0077cc; /* Match the other club names */
+    text-decoration: none;
+}
+
+.club-item img {
+    width: 100%; /* Ensures images remain properly sized */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth effect */
+    width: 120em;
+}
+
+/* Hover effect */
+.club-item:hover img {
+    transform: scale(1.05); /* Slightly enlarges */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increases shadow on hover */
+}
+#Charity-club{
+   display: flex;
+    align-items: center;
+}
+
+/* --- Enactus Page Styles (Starts Here) --- */
+/* Club Page Container */
+.club-container {
+    padding: 120px 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+.club-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #0077cc;
+    margin-bottom: 15px;
+}
+.club-description {
+    font-size: 1.2em;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+/* Club Gallery */
+.club-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.club-img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+.club-img:hover {
+    transform: scale(1.05);
+}
+/* Club Details Section */
+.club-details {
+    padding: 50px;
+    text-align: center;
+    background-color: #1a1f36;
+    color: white;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.club-details h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+.club-details p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #000000;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.social-links a {
+    color: white;
+    font-size: 1.8em;
+    transition: color 0.3s ease;
+}
+.social-links a:hover {
+    color: #fbbc05; /* Enactus yellow color */
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.footer-content a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+} 
+.apply-form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.apply-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.apply-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.apply-form label {
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.apply-form input, .apply-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    
+}
+
+.apply-form button {
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apply-form button:hover {
+    background: #e6b800;
+}
+
+/* --- Enactus Page Styles (Ends Here) --- */
+
+.search-box {
+    position: relative; /* Important for dropdown positioning */
+    width: 260px;
+    margin-left :0px;
+    
+ 
+}
+
+.result-box {
+    position: absolute;
+    top: 100%; /* Directly below the input */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.result-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.result-box li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.result-box li:hover {
+    background-color: #f0f0f0;
+}
